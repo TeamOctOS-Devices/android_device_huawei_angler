@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml
 
 # Input device files
 PRODUCT_COPY_FILES += \
@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-impl
 
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
@@ -260,7 +260,7 @@ PRODUCT_PACKAGES += \
     activity_recognition.angler \
     context_hub.default \
     android.hardware.sensors@1.0-impl \
-    android.hardware.contexthub@1.0-impl \
+    android.hardware.contexthub@1.0-impl
 
 # new gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -310,7 +310,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     nfc_nci.angler \
-    android.hardware.nfc@1.0-impl \
+    android.hardware.nfc@1.0-impl
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
@@ -323,7 +323,7 @@ PRODUCT_PACKAGES += \
 # Power HAL
 PRODUCT_PACKAGES += \
     power.angler \
-    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-impl
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
@@ -382,7 +382,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.data_no_toggle=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.radio.data_con_rprt=true
+    persist.radio.data_con_rprt=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.recorder.show_manufacturer_and_model=true
