@@ -17,14 +17,14 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 # Include custom telephony configuration
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/octos/config/common.mk)
 
 # Inherit AOSP device configuration for angler
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nitrogen_angler
+PRODUCT_NAME := octos_angler
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := angler
 PRODUCT_MODEL := Nexus 6P
@@ -34,3 +34,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
     BUILD_FINGERPRINT=google/angler/angler:8.0.0/OPR5.170623.011/4397986:user/release-keys \
     PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR5.170623.011 4397986 release-keys"
+
